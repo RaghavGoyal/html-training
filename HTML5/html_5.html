@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> HTML 5 </title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+	
+<article>
+	<h2>HTML 5 article tag </h2>
+	hello, this is first article created using HTML 5. The first few weeks will cover basic syntax and concepts, then we’ll start to open it up with more exercises.
+
+Some examples will be given as if written in the interpreter and others as if written in a source file.
+
+Having an interpreter available makes it easy to explore a problem space.
+<p> click here to place a call <a href="tel:1234567890" tabindex="0"> 1234567890 </a> </p>
+</article>
+
+<form id="form1" method="get" action="back.js">
+
+	<label >Name:</label>
+	<input type="text" name="name" tabindex="0" /> <br>
+	<label>EmailId:</label>
+	<input type="text" name="mailid" tabindex="0"> <br/>
+	<label>Password:</label>
+	<input type="password" name="password" tabindex="0"> <br>
+
+	<button type="submit" tabindex="0">Submit</button>
+</form>
+
+<input type="text" name="outer" form="form1" required>
+
+<br>
+
+<form target="_parent">
+	<label>Name:</label>
+	<input type="text" name="name" tabindex="1" /> <br>
+	<label>EmailId:</label>
+	<input type="text" name="mailid" tabindex="2" /> <br/>
+	<label>Password:</label>
+	<input type="password" name="password" tabindex="3">
+
+	<button type="submit" tabindex="4">Submit</button>
+
+	<!-- <iframe src="https://raghavgoyal325.wordpress.com/" > -->
+	<iframe srcdoc="<a href='https://raghavgoyal325.wordpress.com/'>click here</a>" >
+	</iframe>
+
+
+</form>
+
+<a href="new.html" target="_parent"> Click Here </a>
+
+
+
+</div>
+
+</body>
+</html>

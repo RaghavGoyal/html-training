@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event propagation</title>
+
+	<style type="text/css">
+		div
+		{
+			height: 100px;
+			background-color: red;
+		}
+
+		p
+		{
+			color: black;
+			border:1px solid white;
+		}
+	</style>
+</head>
+<body>
+	<div id="div">
+		<p id="p">
+			this is some paragraph text.
+		</p>
+	</div>
+
+	<h1>
+		some text here
+	</h1>
+
+
+	<script type="text/javascript">
+		document.getElementById("div").addEventListener("click", alert("div is clicked"),false);
+		document.getElementById("p").addEventListener("click", alert("paragraph is clicked"),false);
+		
+	</script>
+</body>
+</html>

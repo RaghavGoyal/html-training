@@ -1,0 +1,267 @@
+2<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS lecture 2</title>
+		<style>
+			
+			/*h1,h2, p
+			{
+				color: red;
+			}
+			
+			div>p
+			{
+				color: green;
+			}
+			
+
+			p[raghav="abc"]
+			{
+				color: white;
+				background-color: black;
+			}
+
+			p[raghav="abc123"]
+			{
+				color: white;
+				background-color: blue;
+			}
+
+			p[raghav="abcxyz"]
+			{
+				color: white;
+				background-color: red;
+			}
+			
+
+
+			p[raghav~="abc"]
+			{
+				color: white;
+				background-color: black;
+			}
+
+			
+			p[raghav^="abc"]
+			{
+				color: white;
+				background-color: black;
+			}
+
+			
+
+			p[raghav$="abc"]
+			{
+				color: white;
+				background-color: black;
+			}
+
+
+			p[raghav*="abc"]
+			{
+				color: white;
+				background-color: black;
+			}*/
+
+
+			/* this sequence is important */
+			a:link{
+			color: red;
+			}
+			a:visited{
+				color: green;
+			}
+			a:hover{
+				color: hotpink;
+				border-color: #87ceeb;
+				border-style: solid;
+	    		border-width: 5px;
+			}
+			a:active{
+				color: blue;
+			}
+
+			/*p:first-child
+			{
+				color:red;
+			}*/
+
+			li:first-child
+			{
+				color: red;
+			}
+
+			b:first-of-type,i:first-of-type,u:first-of-type
+			{
+				color:red;
+			}
+
+			article :first-of-type
+			{
+				color: red;
+			}
+
+			input:in-range
+			{
+				color: red;
+
+			}
+
+			input:required
+			{
+				border:1px solid red;
+			}
+
+			.parent
+			{
+				width: 300px;
+				border:5px solid red;
+			}
+
+			.child
+			{
+				width:300px;
+				border: 3px solid green;
+				padding: 3px
+				box-sizing:border-box;
+			}
+
+			.header
+			{
+				background-color: black;
+				height: 40px;
+				width: 100%;
+			}
+
+			.header__navigation
+			{
+				display: inline-block;
+				list-style-type: none;
+			}
+
+			li.set-image
+			{
+				/*background: url('icon.png') no-repeat;
+				background-size: 5px 5px;
+				padding: 0 0 0 20px;
+				list-style: none;*/
+
+				list-style: url('icon.png') no-repeat;
+				list-style-position: inside;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+
+		<div>
+			<p>This is first example</p>
+			<p>This is first example for id</p>
+			<p>This is first example for class</p>
+
+			<span>
+				<p>paragraph in span</p>
+			</span>
+
+			<p>
+				<span>
+					<p>paragraph in nested span</p>
+				</span>
+			</p>
+
+		</div>
+
+		<p>This is first example for id</p>
+		<p>This is first example for class</p>
+		<hr>
+
+		<p raghav="abc">This is first example for class</p>
+		<p raghav="abc123">This is first example for class</p>
+		<p raghav="abcxyz">This is first example for class</p>
+		<p raghav="123abcxyz">This is first example for class</p>
+		<p raghav="abc-xyz">This is first example for class</p>
+		<p raghav="123-abc">This is first example for class</p>
+		<p raghav="123 abc">This is first example for class</p>
+
+		<hr>
+
+		<div> <a href="">Home</a> </div>
+
+		<div>
+			<p>First paragaraph</p>
+			<p>second paragaraph</p>
+			<p>third paragaraph</p>
+
+		</div>
+
+		<div>
+			<p>this is the only paragraph here.</p>
+		</div>
+		
+		<p>
+			outside any div.
+		</p>
+
+
+		<ul>
+			<li class="set-image">element 1</li>
+			<li>element 2</li>
+			<li>
+				<ul>
+					<li>sub element 1</li>
+					<li>sub element 2</li>
+				</ul>
+			</li>
+			<li>element 3</li>
+		</ul>
+
+
+		<article>
+			
+		<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. <b>Lorem Ipsum</b> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+
+		<p>Lorem Ipsum is simply dummy text of the <i>printing and typesetting industry</i>. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,<i> but also the leap into electronic typesetting,</i> remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <u>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</u> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <u>It was popularised in the 1960s</u> with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+		
+		</article>
+
+		<input type="number" name="" min="7" max="20"> <br>
+
+		<input type="text" name="" required>
+
+		<div class="parent">
+			<div class="child">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. <u>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</u> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <u>It was popularised in the 1960s</u> with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</div>
+		</div>
+
+		<br>
+
+
+		<div class="header">
+			<ul class="header__navigation">
+				<li>Home</li>
+				<li>my Network</li>
+				<li>Jobs</li>
+				<li>Messaging</li>
+				<li>Notifications</li>
+			</ul>
+			
+		</div>
+
+		<br>
+		<br>
+
+
+	</body>
+</html>
